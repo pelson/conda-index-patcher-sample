@@ -13,3 +13,12 @@ Understand more about the following metadata:
 Metadata that needs to be fudged:
  * has_prefix - how can we know? Just say that it always does?
  * 
+
+
+
+------
+
+
+Notes:
+
+ * https://packaging.python.org/specifications/distribution-formats/?highlight=sdist
