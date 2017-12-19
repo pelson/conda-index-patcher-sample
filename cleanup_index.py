@@ -26,13 +26,8 @@ def write_index(index, outdir):
 
 
 def order_dict(dictionary):
-    result = {}
-    for k, v in sorted(dictionary.items()):
-        if isinstance(v, dict):
-            result[k] = order_dict(v)
-        else:
-            result[k] = v
-    return result
+    return {k: order_dict(v) if isinstance(v, dict) else v
+            for k, v in sorted(dictionary.items())}
 
 
 def update_index(fname, outdir):
