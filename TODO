@@ -1,0 +1,15 @@
+Remove spurious metadata:
+ * binstar
+ * requires
+ * info: {}
+
+Understand more about the following metadata:
+ * subdir - is it used? Can we make use of it for on the fly creation of a distribution?
+
+ * size & md5 - what if we don't yet know what this will be. Can it be removed safely?
+ 
+
+
+Metadata that needs to be fudged:
+ * has_prefix - how can we know? Just say that it always does?
+ * 
